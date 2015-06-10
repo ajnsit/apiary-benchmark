@@ -1,0 +1,102 @@
+Benchmarking AFTER_DEEP
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.05ms   18.61ms 692.76ms   93.15%
+    Req/Sec    13.41k     2.24k   17.79k    66.50%
+  800867 requests in 30.03s, 114.56MB read
+Requests/sec:  26668.57
+Transfer/sec:      3.81MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.24ms   31.48ms 877.13ms   98.36%
+    Req/Sec    13.50k     3.23k   32.17k    80.83%
+  806618 requests in 30.03s, 115.39MB read
+Requests/sec:  26862.32
+Transfer/sec:      3.84MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.96ms   30.71ms 911.07ms   98.33%
+    Req/Sec    13.56k     2.47k   20.32k    66.83%
+  810097 requests in 30.03s, 115.89MB read
+Requests/sec:  26973.36
+Transfer/sec:      3.86MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.91ms   41.75ms   1.21s    99.09%
+    Req/Sec    13.61k     3.19k   31.65k    80.03%
+  800641 requests in 30.02s, 114.53MB read
+Requests/sec:  26673.54
+Transfer/sec:      3.82MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.70ms   30.08ms 753.36ms   97.48%
+    Req/Sec    13.28k     2.69k   24.37k    69.00%
+  793116 requests in 30.04s, 113.46MB read
+Requests/sec:  26403.86
+Transfer/sec:      3.78MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.73ms   19.30ms 644.02ms   90.44%
+    Req/Sec    13.56k     2.79k   23.91k    71.00%
+  810338 requests in 30.03s, 115.92MB read
+Requests/sec:  26988.11
+Transfer/sec:      3.86MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.04ms   65.69ms   1.50s    98.81%
+    Req/Sec    13.06k     2.50k   17.95k    67.83%
+  780088 requests in 30.02s, 111.59MB read
+  Socket errors: connect 0, read 0, write 0, timeout 6
+Requests/sec:  25984.83
+Transfer/sec:      3.72MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.62ms   15.14ms 622.19ms   92.50%
+    Req/Sec    13.55k     2.21k   18.56k    68.67%
+  809512 requests in 30.02s, 115.80MB read
+Requests/sec:  26964.34
+Transfer/sec:      3.86MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.51ms   43.26ms   1.28s    99.03%
+    Req/Sec    13.60k     2.42k   18.83k    72.00%
+  812716 requests in 30.03s, 116.26MB read
+Requests/sec:  27063.75
+Transfer/sec:      3.87MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    28.94ms   23.53ms 664.80ms   91.69%
+    Req/Sec    13.58k     2.30k   19.57k    71.00%
+  810995 requests in 30.02s, 116.01MB read
+Requests/sec:  27016.13
+Transfer/sec:      3.86MB
+=================== summary ===================
+machine:      aj-Lenovo-G500s
+ghc version:  7.8.4
+bench target: yesod-core-1.4.10
+bench:        AFTER_DEEP
+bench mode:   30s * 10
+average:      26759.88
+stdev:        341.76
+=================== oneline ===================
+aj-Lenovo-G500s,7.8.4,yesod-core-1.4.10,AFTER_DEEP,30s,10,26759.88,341.76

@@ -1,0 +1,108 @@
+Benchmarking AFTER_DEEP
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.23ms   56.23ms   1.63s    99.02%
+    Req/Sec    15.00k     0.96k   17.36k    66.83%
+  895552 requests in 30.02s, 128.11MB read
+Requests/sec:  29832.55
+Transfer/sec:      4.27MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.31ms   87.18ms   2.00s    98.57%
+    Req/Sec    14.45k     1.48k   20.37k    70.83%
+  862811 requests in 30.02s, 123.43MB read
+  Socket errors: connect 0, read 0, write 0, timeout 103
+Requests/sec:  28740.28
+Transfer/sec:      4.11MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.68ms   88.00ms   1.99s    98.66%
+    Req/Sec    15.81k     4.13k   33.35k    88.40%
+  895307 requests in 30.02s, 128.07MB read
+  Socket errors: connect 0, read 0, write 0, timeout 52
+Requests/sec:  29820.73
+Transfer/sec:      4.27MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.25ms   90.80ms   1.93s    98.50%
+    Req/Sec    15.00k     1.07k   18.02k    72.00%
+  895919 requests in 30.02s, 128.16MB read
+  Socket errors: connect 0, read 67, write 0, timeout 23
+Requests/sec:  29840.57
+Transfer/sec:      4.27MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    33.12ms   80.42ms   1.79s    98.57%
+    Req/Sec    14.87k     1.71k   23.07k    82.00%
+  888153 requests in 30.02s, 127.05MB read
+  Socket errors: connect 0, read 85, write 0, timeout 37
+Requests/sec:  29587.85
+Transfer/sec:      4.23MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.36ms   93.71ms   1.99s    98.48%
+    Req/Sec    14.69k     1.44k   19.19k    71.67%
+  877190 requests in 30.03s, 125.48MB read
+  Socket errors: connect 0, read 0, write 0, timeout 6
+Requests/sec:  29214.47
+Transfer/sec:      4.18MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.13ms   81.81ms   1.98s    98.78%
+    Req/Sec    14.79k     1.49k   19.45k    76.67%
+  883136 requests in 30.02s, 126.33MB read
+  Socket errors: connect 0, read 0, write 0, timeout 142
+Requests/sec:  29414.65
+Transfer/sec:      4.21MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    30.82ms   62.68ms   1.42s    98.69%
+    Req/Sec    14.63k     4.38k   30.62k    82.33%
+  874342 requests in 30.03s, 125.08MB read
+Requests/sec:  29113.74
+Transfer/sec:      4.16MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    38.08ms  108.94ms   1.98s    98.12%
+    Req/Sec    14.88k     1.88k   23.15k    85.50%
+  888738 requests in 30.02s, 127.13MB read
+  Socket errors: connect 0, read 0, write 0, timeout 14
+Requests/sec:  29607.53
+Transfer/sec:      4.24MB
+-----------------------------------------------
+Running 30s test @ http://localhost:8080/after
+  2 threads and 800 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.82ms   65.92ms   1.52s    98.63%
+    Req/Sec    14.43k     2.41k   21.33k    73.67%
+  861838 requests in 30.02s, 123.29MB read
+Requests/sec:  28706.85
+Transfer/sec:      4.11MB
+=================== summary ===================
+machine:      aj-Lenovo-G500s
+ghc version:  7.8.4
+bench target: Spock-0.7.9.0
+bench:        AFTER_DEEP
+bench mode:   30s * 10
+average:      29387.92
+stdev:        430.42
+=================== oneline ===================
+aj-Lenovo-G500s,7.8.4,Spock-0.7.9.0,AFTER_DEEP,30s,10,29387.92,430.42

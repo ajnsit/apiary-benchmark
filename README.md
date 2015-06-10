@@ -35,14 +35,14 @@ Machines
 
 ```.sh
 % uname -a
-Linux server1 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux
+Linux aj-Lenovo-G500s 3.16.0-33-generic #44-Ubuntu SMP Thu Mar 12 12:19:35 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 % cat /proc/cpuinfo | grep 'model name'
-model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
-model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
-model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
-model name	: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
+model name      : Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name      : Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name      : Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name      : Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
 % cat /proc/meminfo | grep MemTotal
-MemTotal:       16354960 kB
+MemTotal:        8041984 kB
 ```
 
 Results
@@ -50,14 +50,17 @@ Results
 
 ### single thread
 
-![result](./results/1/result-server1.png)
+![result](./results/1/result-aj-Lenovo-G500s.png)
 
-|machine  |ghc    |framework         |HELLO   |PARAM   |DEEP    |AFTER_DEEP|
-|---------|-------|------------------|--------|--------|--------|----------|
-|server1  |7.8.4  |apiary-1.3.0      |31520.82|24457.39|28788.55|32261.40  |
-|server1  |7.8.4  |Spock-0.7.7.0     |26104.94|23017.22|25273.03|27661.29  |
-|server1  |7.8.4  |yesod-core-1.4.8  |23629.91|18810.28|20557.09|22911.18  |
-|server1  |7.8.4  |scotty-0.9.1      |27098.37|16637.75|2579.80 |9164.82   |
+|machine         |ghc    |framework          |HELLO   | PARAM   |DEEP    |AFTER_DEEP|
+|----------------|-------|-------------------|--------|---------|--------|----------|
+|aj-Lenovo-G500s |7.8.4  |wai-routes-0.7.0   |42527.76| 25314.18|31671.36|38033.70  |
+|aj-Lenovo-G500s |7.8.4  |scotty-0.9.1       |29232.77| 18897.44|2907.24 |10063.60  |
+|aj-Lenovo-G500s |7.8.4  |apiary-1.4.3       |38879.96| 31273.60|36203.29|40553.63  |
+|aj-Lenovo-G500s |7.8.4  |Spock-0.7.9.0      |28967.70| 24613.51|27203.14|29387.92  |
+|aj-Lenovo-G500s |7.8.4  |yesod-core-1.4.10  |23204.61| 19590.82|23421.60|26759.88  |
+
+
 
 References
 ---
